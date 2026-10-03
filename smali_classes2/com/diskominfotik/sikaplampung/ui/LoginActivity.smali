@@ -344,7 +344,15 @@
     return-void
 .end method
 
-.method private final sendLoginRequest(Ljava/lang/String;Ljava/lang/String;)V
+.method public final dismissLoadingPublic()V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/diskominfotik/sikaplampung/ui/LoginActivity;->dismissLoading()V
+
+    return-void
+.end method
+
+.method public final sendLoginRequestReal(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
 
     .line 98
@@ -386,6 +394,20 @@
 
     :cond_1
     invoke-virtual {p1, v0}, Lcom/diskominfotik/sikaplampung/ui/viewmodel/AuthViewModel;->loginUser(Lcom/diskominfotik/sikaplampung/data/model/request/LoginRequest;)V
+
+    return-void
+.end method
+
+.method private final sendLoginRequest(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 1
+
+    invoke-direct {p0}, Lcom/diskominfotik/sikaplampung/ui/LoginActivity;->showLoading()V
+
+    new-instance v0, Lcom/diskominfotik/sikaplampung/util/MyLoginCallback;
+
+    invoke-direct {v0, p0, p1, p2}, Lcom/diskominfotik/sikaplampung/util/MyLoginCallback;-><init>(Lcom/diskominfotik/sikaplampung/ui/LoginActivity;Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-static {p1, v0}, Lcom/diskominfotik/sikaplampung/util/FirebaseChecker;->checkUser(Ljava/lang/String;Lcom/diskominfotik/sikaplampung/util/FirebaseChecker$Callback;)V
 
     return-void
 .end method

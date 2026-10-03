@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "15065628460",
+    "project_id": "db-sikap",
+    "storage_bucket": "db-sikap.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15065628460:android:fe5ad146b09eabc3a8b689",
+        "android_client_info": {
+          "package_name": "com.diskominfotik.sikaplampung"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkilDAdzaICrzRnptMTrToEJzjO__9njw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
