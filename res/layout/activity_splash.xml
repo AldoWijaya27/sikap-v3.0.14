@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/colorBackgroundLight" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ivWaveBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/splash_wave_background" android:scaleType="fitEnd" android:adjustViewBounds="true" android:layout_alignParentBottom="true" android:contentDescription="Wave Background" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/ivAppLogo" android:layout_width="120.0dip" android:layout_height="120.0dip" android:src="@drawable/logolampung" />
+        <TextView android:textSize="36.0sp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:id="@id/tvAppName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/app_name" android:fontFamily="sans-serif-medium" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/colorPrimary" android:id="@id/tvTagline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/app_slogan" />
+        <ProgressBar android:id="@id/progressBar" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="32.0dip" android:indeterminateTint="@color/colorPrimaryVariant" style="?android:progressBarStyle" />
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/tvVersion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="32.0dip" android:text="Version 3.0.0" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

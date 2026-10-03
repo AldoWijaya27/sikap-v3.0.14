@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main" android:background="@drawable/bg_gradient_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/headerSection" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_20dp" android:layout_marginTop="@dimen/margin_16dp" android:layout_marginRight="@dimen/margin_20dp" android:layout_marginBottom="12.0dip" android:layout_marginHorizontal="@dimen/margin_20dp">
+        <androidx.cardview.widget.CardView android:id="@id/cvBack" android:layout_width="44.0dip" android:layout_height="44.0dip" android:foreground="?selectableItemBackground" android:layout_centerVertical="true" android:layout_alignParentStart="true" app:cardBackgroundColor="@color/white" app:cardCornerRadius="22.0dip" app:cardElevation="4.0dip">
+            <ImageView android:id="@id/ivBack" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@android:drawable/ic_menu_revert" android:contentDescription="Back Button" app:tint="@color/colorPrimary" />
+        </androidx.cardview.widget.CardView>
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/tvTitleOnboardingPresensi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Presensi Format Baru" android:layout_centerInParent="true" android:fontFamily="sans-serif-medium" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_below="@id/headerSection">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView android:id="@id/cardImagePresensiInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_20dp" android:layout_marginTop="8.0dip" android:layout_marginRight="@dimen/margin_20dp" android:layout_marginHorizontal="@dimen/margin_20dp" app:cardCornerRadius="16.0dip" app:cardElevation="8.0dip">
+                <ImageView android:id="@id/ivIllustration" android:layout_width="fill_parent" android:layout_height="300.0dip" android:src="@drawable/ilustration_presensi_facesmile_blink" android:scaleType="centerCrop" />
+            </androidx.cardview.widget.CardView>
+            <LinearLayout android:orientation="vertical" android:id="@id/llContentPresensi" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_20dp" android:layout_marginTop="@dimen/margin_16dp" android:layout_marginRight="@dimen/margin_20dp" android:layout_marginHorizontal="@dimen/margin_20dp">
+                <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:id="@id/tvDescriptionPresensi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/presensi_new_way" />
+                <androidx.cardview.widget.CardView android:id="@id/cvCountdownWarning" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" app:cardBackgroundColor="#fffff3e0" app:cardCornerRadius="12.0dip" app:cardElevation="2.0dip">
+                    <LinearLayout android:orientation="horizontal" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_gravity="top" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@android:drawable/ic_dialog_alert" android:contentDescription="Warning Icon" app:tint="#ffe65100" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="12.0dip">
+                            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffe65100" android:id="@id/tvCountdownTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Halaman akan ditutup otomatis" />
+                            <TextView android:textSize="11.0sp" android:textColor="#ffe65100" android:id="@id/tvCountdownDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Segera mulai presensi. Untuk memastikan keakuratan lokasi Anda, halaman ini akan ditutup dalam waktu " />
+                            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ffbf360c" android:id="@id/tvCountdownValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="30 detik" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <com.google.android.material.button.MaterialButton android:textSize="13.0sp" android:textColor="@color/colorPrimary" android:id="@id/btnStartPresensi" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="24.0dip" android:text="Mulai Presensi" android:backgroundTint="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/colorBackgroundLight" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bg_default_sikap" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="vertical" android:id="@id/llCardBottom" android:background="@drawable/bg_card" android:padding="16.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:cardBackgroundColor="@color/white">
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/colorPrimaryVariant" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:fontFamily="@font/italiana_regular" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/dark_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_desc" android:fontFamily="@font/poppins_medium" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip">
+            <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/pgLogin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_8dp" android:layout_marginRight="@dimen/_8dp" android:progressTint="@color/colorPrimary" android:indeterminateTint="@color/colorPrimary" android:layout_marginHorizontal="@dimen/_8dp" />
+            <com.google.android.material.button.MaterialButton android:textSize="14.0sp" android:textColor="@color/colorOnPrimary" android:id="@id/btnShowFormLogin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/login" android:backgroundTint="@color/colorPrimaryVariant" />
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:textColor="@color/colorPrimaryVariant" android:layout_gravity="center_horizontal" android:id="@id/tvGoToRegister" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="36.0dip" android:text="Belum punya akun? Daftar di sini" android:fontFamily="@font/poppins_medium" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/loadingOverlay" android:background="#cc000000" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:cardCornerRadius="16.0dip" app:cardElevation="8.0dip">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="32.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ProgressBar android:layout_width="48.0dip" android:layout_height="48.0dip" android:indeterminateTint="@color/colorPrimary" />
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorOnSurface" android:id="@id/tvLoadingMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="Mengirim Data..." android:fontFamily="sans-serif-medium" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/colorOnSurface" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Mohon tunggu sebentar" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>

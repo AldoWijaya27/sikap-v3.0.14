@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="onboarding_illustrations">
+        <item>@drawable/ilustration_presensi_facesmile_blink</item>
+        <item>@drawable/ilustration_smile_blink</item>
+        <item>@drawable/onboarding_image_asn</item>
+    </array>
+</resources>

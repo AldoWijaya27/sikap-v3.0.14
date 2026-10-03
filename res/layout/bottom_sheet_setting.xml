@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_bottom_sheet" android:padding="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_gravity="center_horizontal" android:background="@drawable/bg_handle_bar" android:layout_width="40.0dip" android:layout_height="4.0dip" android:layout_marginBottom="16.0dip" />
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/colorPrimaryVariant" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Menu" android:fontFamily="@font/italiana_regular" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/dark_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Pilih opsi yang tersedia" android:fontFamily="@font/poppins_medium" />
+    <View android:background="@color/dark_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="16.0dip" android:layout_marginBottom="8.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/btnDebugLocation" android:background="?selectableItemBackground" android:padding="12.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_location" app:tint="@color/colorPrimary" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="16.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="@color/colorPrimaryVariant" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tampilkan Lokasi" android:fontFamily="@font/poppins_medium" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/dark_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Buka lokasi saat ini di Maps" android:fontFamily="@font/poppins_regular" />
+        </LinearLayout>
+        <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/baseline_arrow_forward_ios_24" app:tint="@color/grey_400" />
+    </LinearLayout>
+    <View android:background="@color/dark_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:layout_marginVertical="4.0dip" />
+</LinearLayout>

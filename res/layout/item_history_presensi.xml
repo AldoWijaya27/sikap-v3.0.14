@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="6.0dip" android:foreground="?selectableItemBackground" android:layout_marginHorizontal="8.0dip" android:layout_marginVertical="6.0dip" app:cardBackgroundColor="@color/white" app:cardCornerRadius="12.0dip" app:cardElevation="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/llPresensi" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="60.0dip" android:layout_height="wrap_content">
+            <TextView android:textSize="28.0sp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:id="@id/tvDay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="14" android:fontFamily="sans-serif-medium" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/colorOnSurface" android:id="@id/tvMonth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OKT" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/colorOnSurface" android:id="@id/tvDayName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sen" />
+        </LinearLayout>
+        <View android:background="@color/colorOutline" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/tvStatus" android:background="@drawable/bg_status_danger" android:paddingLeft="12.0dip" android:paddingTop="4.0dip" android:paddingRight="12.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hadir" android:paddingHorizontal="12.0dip" android:paddingVertical="4.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@android:drawable/ic_input_add" android:contentDescription="Check In Icon" app:tint="@color/colorPrimary" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/colorOnSurface" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Masuk:" android:layout_marginStart="8.0dip" />
+                <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/colorOnSurface" android:id="@id/tvCheckIn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="07:45" android:fontFamily="sans-serif-medium" android:layout_marginStart="4.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+                <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@android:drawable/ic_menu_revert" android:contentDescription="Check Out Icon" app:tint="@color/colorError" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/colorOnSurface" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Keluar:" android:layout_marginStart="8.0dip" />
+                <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/colorOnSurface" android:id="@id/tvCheckOut" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="16:30" android:fontFamily="sans-serif-medium" android:layout_marginStart="4.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@android:drawable/ic_menu_view" android:contentDescription="Detail Arrow" android:layout_marginStart="8.0dip" app:tint="@color/colorOutline" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
