@@ -1,0 +1,79 @@
+.class public final Lcom/google/firebase/messaging/R$attr;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/firebase/messaging/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "attr"
+.end annotation
+
+
+# static fields
+.field public static alpha:I = 0x7f04002e
+
+.field public static buttonSize:I = 0x7f040096
+
+.field public static circleCrop:I = 0x7f0400d3
+
+.field public static colorScheme:I = 0x7f04011d
+
+.field public static coordinatorLayoutStyle:I = 0x7f04014d
+
+.field public static font:I = 0x7f0401fe
+
+.field public static fontProviderAuthority:I = 0x7f040200
+
+.field public static fontProviderCerts:I = 0x7f040201
+
+.field public static fontProviderFetchStrategy:I = 0x7f040203
+
+.field public static fontProviderFetchTimeout:I = 0x7f040204
+
+.field public static fontProviderPackage:I = 0x7f040205
+
+.field public static fontProviderQuery:I = 0x7f040206
+
+.field public static fontStyle:I = 0x7f040208
+
+.field public static fontVariationSettings:I = 0x7f040209
+
+.field public static fontWeight:I = 0x7f04020a
+
+.field public static imageAspectRatio:I = 0x7f040234
+
+.field public static imageAspectRatioAdjust:I = 0x7f040235
+
+.field public static keylines:I = 0x7f04026a
+
+.field public static layout_anchor:I = 0x7f040276
+
+.field public static layout_anchorGravity:I = 0x7f040277
+
+.field public static layout_behavior:I = 0x7f040278
+
+.field public static layout_dodgeInsetEdges:I = 0x7f0402a9
+
+.field public static layout_insetEdge:I = 0x7f0402b3
+
+.field public static layout_keyline:I = 0x7f0402b4
+
+.field public static scopeUris:I = 0x7f0403bc
+
+.field public static statusBarBackground:I = 0x7f040420
+
+.field public static ttcIndex:I = 0x7f0404ea
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
