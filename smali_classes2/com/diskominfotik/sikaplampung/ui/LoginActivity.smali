@@ -861,7 +861,7 @@
 
     .line 129
     :cond_2
-    invoke-direct {p2, p0, p1}, Lcom/diskominfotik/sikaplampung/ui/LoginActivity;->sendLoginRequest(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p2, p0, p1}, Lcom/diskominfotik/sikaplampung/ui/LoginActivity;->sendLoginRequestReal(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 132
     :goto_0

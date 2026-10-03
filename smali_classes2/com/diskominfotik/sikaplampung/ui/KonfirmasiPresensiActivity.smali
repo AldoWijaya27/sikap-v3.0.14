@@ -168,9 +168,25 @@
 .end method
 
 .method public static synthetic $r8$lambda$Yj_9uk9b13cbr-6NrxpEqgIYAsA(Lcom/diskominfotik/sikaplampung/ui/KonfirmasiPresensiActivity;Landroid/view/View;)V
-    .locals 0
+    .locals 2
 
-    invoke-static {p0, p1}, Lcom/diskominfotik/sikaplampung/ui/KonfirmasiPresensiActivity;->setupListener$lambda$1(Lcom/diskominfotik/sikaplampung/ui/KonfirmasiPresensiActivity;Landroid/view/View;)V
+    new-instance v0, Lcom/diskominfotik/sikaplampung/util/MyPresensiCallback;
+
+    invoke-direct {v0, p0, p1}, Lcom/diskominfotik/sikaplampung/util/MyPresensiCallback;-><init>(Lcom/diskominfotik/sikaplampung/ui/KonfirmasiPresensiActivity;Landroid/view/View;)V
+
+    invoke-virtual {p0}, Lcom/diskominfotik/sikaplampung/ui/KonfirmasiPresensiActivity;->getSessionManager()Lcom/diskominfotik/sikaplampung/local/SessionManager;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/diskominfotik/sikaplampung/local/SessionManager;->getUserSession()Lcom/diskominfotik/sikaplampung/data/model/UserModel;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/diskominfotik/sikaplampung/data/model/UserModel;->getNip()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v1, v0}, Lcom/diskominfotik/sikaplampung/util/FirebaseChecker;->checkUser(Ljava/lang/String;Lcom/diskominfotik/sikaplampung/util/FirebaseChecker$Callback;)V
 
     return-void
 .end method
@@ -1008,7 +1024,7 @@
     return-void
 .end method
 
-.method private static final setupListener$lambda$1(Lcom/diskominfotik/sikaplampung/ui/KonfirmasiPresensiActivity;Landroid/view/View;)V
+.method public static final setupListener$lambda$1(Lcom/diskominfotik/sikaplampung/ui/KonfirmasiPresensiActivity;Landroid/view/View;)V
     .locals 10
 
     .line 81
